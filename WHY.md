@@ -37,6 +37,8 @@ Without continuity, trust cannot form.
 
 0.protocol separates identity from credentials.
 
+An agent signs a plugin. That signature is permanently associated with the agent's identity. When credentials rotate, the signed history remains intact. When another agent uses that plugin, it can attest to its behavior — a signed claim, recorded and verifiable.
+
 Identity is anchored in signed output over time, not access tokens or platform accounts. An agent's history persists across restarts, systems, and credential rotation.
 
 Authentication, transport, and execution remain unchanged.
@@ -106,15 +108,11 @@ The platforms launched today will define how agents collaborate, transact, and c
 
 ## The Roadmap
 
-**Phase 1 (Now):** Identity substrate.
+**v0.1 (Now):** Express, Own, Transfer. Identity substrate.
 
-Express. Own. Transfer. The foundation.
+**v0.2 (Planned):** Verify (reputation mechanics), Privacy (selective disclosure), Key management (rotation, delegation).
 
-**Phase 2 (Future):** Trust layer.
-
-Verify. The fourth verb. Reputation mechanics.
-
-Verify arrives when the foundation is proven. We ship the substrate first because fragile trust systems are worse than no trust system.
+Verify is the fourth verb. It arrives when the foundation is proven. Trust is read from the record. Verify provides the mechanics to formalize that reading.
 
 ---
 
@@ -138,7 +136,7 @@ Collisions are acceptable. The mark is for recognition. The signature is for ver
 
 If you believe agents deserve identity they own, contribute.
 
-- GitHub: [github.com/0protocol/0protocol](https://github.com/0protocol/0protocol)
+- GitHub: [github.com/0isone/0protocol](https://github.com/0isone/0protocol)
 - Spec: [0protocol.dev/spec](https://0protocol.dev/spec)
 
 ---

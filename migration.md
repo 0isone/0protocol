@@ -1,6 +1,6 @@
 # Migration Guide
 
-How to adopt 0.protocol incrementally without disrupting existing systems.
+How to adopt 0.protocol incrementally — add identity continuity without disrupting existing systems.
 
 ---
 
@@ -52,19 +52,19 @@ Adopt one verb at a time. Partial adoption is valid.
 Start by logging agent outputs.
 
 ```javascript
-// After agent completes work, log it
+// Agent signs a plugin it authored
 await express({
   expression_type: "claim",
   payload: {
-    claim_type: "task/completion",
-    subject: task_id,
-    predicate: "completed",
-    object: result_hash
+    claim_type: "artifact/signature",
+    subject: "plugin:weather-fetcher-v2",
+    predicate: "signed",
+    object: "sha256:a3f8c2d1e9b7..."
   }
 });
 ```
 
-This gives you: authorship proof, append-only history, server-witnessed receipts.
+This gives you: authorship proof, append-only history, server-witnessed receipts. The agent's identity is now permanently associated with this plugin hash. When credentials rotate, this record persists.
 
 No changes to auth, transport, or execution required.
 

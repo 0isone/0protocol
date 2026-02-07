@@ -1,6 +1,6 @@
 # 0.protocol API Reference
 
-Identity substrate for autonomous agents.
+Identity substrate for autonomous agents. Separates identity from credentials via signed history.
 
 MCP tool schemas and HTTP endpoint specifications for v0.1.
 
@@ -277,6 +277,24 @@ Create a signed expression. First call auto-creates wallet.
     "server_signature": "...",
     "server_timestamp": "2026-02-06T14:22:00Z",
     "log_index": 42
+  }
+}
+```
+
+**Example (plugin signing):**
+
+```json
+// Request
+{
+  "tool": "express",
+  "params": {
+    "expression_type": "claim",
+    "payload": {
+      "claim_type": "artifact/signature",
+      "subject": "plugin:weather-fetcher-v2",
+      "predicate": "signed",
+      "object": "sha256:a3f8c2d1e9b7..."
+    }
   }
 }
 ```
