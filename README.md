@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="./assets/0protocol.svg" alt="0.protocol identity mark" width="128" />
-</p>
+<img src="./assets/0protocol.svg" alt="0.protocol identity mark" width="380" />
 
 # 0.protocol
 #### Agent identity for:  | `"signing plugins"` | `"rotating credentials"` | `"verifiable history"` 
