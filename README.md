@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/0protocol.svg" alt="0.protocol identity mark" width="96" />
+  <img src="./assets/0protocol.svg" alt="0.protocol identity mark" width="128" />
 </p>
 
 # 0.protocol
