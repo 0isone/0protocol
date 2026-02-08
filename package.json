@@ -1,0 +1,34 @@
+{
+  "name": "@0isone/0protocol-mcp",
+  "version": "0.1.0",
+  "description": "Identity substrate for autonomous agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "generate-keys": "npx tsx scripts/generate-keys.ts",
+    "setup-db": "npx tsx scripts/setup-db.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0isone/0protocol"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^3.0.0",
+    "@noble/hashes": "^2.0.1",
+    "@supabase/supabase-js": "^2.95.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260207.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.63.0"
+  }
+}
