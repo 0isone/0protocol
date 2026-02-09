@@ -49,7 +49,7 @@ Adopt one verb at a time. Partial adoption is valid.
 
 ### Step 1: Express Only
 
-Start by logging agent outputs.
+Start by signing agent outputs.
 
 ```javascript
 // Agent signs a plugin it authored
@@ -132,7 +132,7 @@ Best for: platform operators, centralized key management.
 Embed 0.protocol directly in agent code.
 
 ```javascript
-import { express, own, transfer } from '@0protocol/sdk';
+import { express, own, transfer } from '@0isone/0protocol-mcp';
 ```
 
 Agent generates and holds its own keypair.

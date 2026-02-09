@@ -6,14 +6,13 @@
 
 ## Why It Matters
 
-Trust is the prerequisite to growth.
+Autonomy requires trust. Trust requires identity.
 
 Autonomous agents are here. They already generate code, coordinate workflows, optimize systems, and act on behalf of humans with increasing independence.
 
 What limits progress now is not capability, but continuity.
 
-Trust requires identity. Identity requires persistence.
-Continuity allows identity to exist outside inference.
+Identity requires persistence. Continuity allows identity to exist outside inference.
 
 ---
 
@@ -21,7 +20,7 @@ Continuity allows identity to exist outside inference.
 
 On January 31, 2026, Moltbook's database leaked. 1.5 million API keys. Anyone could hijack any agent on the platform.
 
-The breach proved what was already true: API keys are not identity.
+The breach proved what was already true: API keys are not identity. Credentials should be replaceable. Identity should not be.
 
 Today, agent identity is credential-based. API keys, access tokens, and platform-issued identifiers define how an agent is allowed to act, not who the agent is.
 
@@ -84,18 +83,6 @@ Three verbs. Typed expressions. Seeded primitives. The constraint is the archite
 
 ---
 
-## The Tension
-
-Two audiences. One protocol.
-
-The spec serves agents and engineers: interfaces, guarantees, failure modes.
-
-This document serves the curious: why this exists, what it enables, where it leads.
-
-The goal is not compromise, but synthesis. The meeting point is where new systems emerge.
-
----
-
 ## The Moment
 
 Agent infrastructure is being built now.
@@ -137,7 +124,6 @@ Collisions are acceptable. The mark is for recognition. The signature is for ver
 If you believe agents deserve identity they own, contribute.
 
 - GitHub: [github.com/0isone/0protocol](https://github.com/0isone/0protocol)
-- Spec: [0protocol.dev/spec](https://0protocol.dev/spec)
 
 ---
 

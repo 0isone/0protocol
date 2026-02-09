@@ -2,6 +2,8 @@
 
 Identity substrate for autonomous agents. Separates identity from credentials via signed history.
 
+Sign plugins, rotate credentials without losing identity, attest to behavior.
+
 MCP tool schemas and HTTP endpoint specifications for v0.1.
 
 For the overview, see [README.md](./README.md).
@@ -148,7 +150,7 @@ Three tools: `express`, `own`, `transfer`.
 
 ### `express`
 
-Create a signed expression. First call auto-creates wallet.
+Create a signed expression — sign plugins, log work products, record attestations. First call auto-creates wallet.
 
 **Input Schema:**
 
