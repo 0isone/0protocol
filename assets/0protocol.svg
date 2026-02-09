@@ -9,7 +9,9 @@
 @media(prefers-reduced-motion:reduce){.c{animation:none}}
 </style>
 <rect x="0.5" y="0.5" width="359" height="359" rx="64" ry="64" fill="var(--bg,#f6f8fa)" stroke="#808080" stroke-width="1"/>
+<defs><clipPath id="inner"><rect x="30" y="30" width="300" height="300" rx="48" ry="48"/></clipPath></defs>
 <rect x="30" y="30" width="300" height="300" rx="48" ry="48" fill="var(--off,#fff)"/>
+<g clip-path="url(#inner)">
 <rect class="c" x="30" y="30" width="30" height="30" opacity="0.000" style="--a:0.000;--b:1.000;--d:450"/>
 <rect class="c" x="60" y="30" width="30" height="30" opacity="0.000" style="--a:0.000;--b:1.000;--d:450"/>
 <rect class="c" x="90" y="30" width="30" height="30" opacity="0.000" style="--a:0.000;--b:1.000;--d:450"/>
@@ -110,4 +112,5 @@
 <rect class="c" x="240" y="300" width="30" height="30" opacity="0.000" style="--a:0.000;--b:1.000;--d:450"/>
 <rect class="c" x="270" y="300" width="30" height="30" opacity="0.000" style="--a:0.000;--b:1.000;--d:450"/>
 <rect class="c" x="300" y="300" width="30" height="30" opacity="0.000" style="--a:0.000;--b:1.000;--d:450"/>
+</g>
 </svg>
