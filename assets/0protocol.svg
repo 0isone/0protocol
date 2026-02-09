@@ -4,25 +4,25 @@
 :root{--bg:#f6f8fa;--off:#fff;--c0:#ffffff;--c1:#cdcecf;--c2:#9c9da0;--c3:#6a6c70;--c4:#383b40}
 @media(prefers-color-scheme:dark){:root{--bg:#161b22;--off:#0d1117;--c0:#0d1117;--c1:#3d4248;--c2:#6d7379;--c3:#9ea4aa;--c4:#ced5db}}
 .c{shape-rendering:crispEdges;fill:var(--f)}
+.frame{fill:var(--bg)}
+.inner{fill:var(--off)}
 @keyframes t{0%,100%{fill:var(--a)}50%{fill:var(--b)}}
 .c{animation:t 8.5s ease-in-out infinite;animation-delay:calc(var(--d,0)*1ms)}
 @media(prefers-reduced-motion:reduce){.c{animation:none}}
 </style>
-<rect x="0.5" y="0.5" width="359" height="359" rx="64" ry="64" fill="var(--bg,#f6f8fa)" stroke="#808080" stroke-width="1"/>
-<defs><clipPath id="inner"><rect x="30" y="30" width="300" height="300" rx="48" ry="48"/></clipPath></defs>
-<rect x="30" y="30" width="300" height="300" rx="48" ry="48" fill="var(--off,#fff)"/>
-<g clip-path="url(#inner)">
-<rect class="c" x="30" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="60" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="90" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="120" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="150" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="180" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="210" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="240" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="270" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="300" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="60" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect class="frame" x="0.5" y="0.5" width="359" height="359" rx="64" ry="64" fill="#f6f8fa" stroke="#808080" stroke-width="1"/>
+<rect class="inner" x="30" y="30" width="300" height="300" rx="48" ry="48" fill="#ffffff"/>
+<rect x="30" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="60" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="90" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="120" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="150" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="180" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="210" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="240" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="270" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="300" y="30" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="60" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="60" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="60" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="120" y="60" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
@@ -31,8 +31,8 @@
 <rect class="c" x="210" y="60" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="240" y="60" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="270" y="60" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="60" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="90" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="60" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="90" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="90" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="90" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="120" y="90" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
@@ -41,8 +41,8 @@
 <rect class="c" x="210" y="90" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="240" y="90" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="270" y="90" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="90" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="120" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="90" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="120" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="120" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="120" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="120" y="120" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
@@ -51,8 +51,8 @@
 <rect class="c" x="210" y="120" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
 <rect class="c" x="240" y="120" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="270" y="120" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="120" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="150" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="120" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="150" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="150" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="150" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="120" y="150" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
@@ -61,8 +61,8 @@
 <rect class="c" x="210" y="150" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
 <rect class="c" x="240" y="150" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="270" y="150" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="150" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="180" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="150" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="180" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="180" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="180" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="120" y="180" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
@@ -71,8 +71,8 @@
 <rect class="c" x="210" y="180" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
 <rect class="c" x="240" y="180" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="270" y="180" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="180" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="210" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="180" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="210" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="210" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="210" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="120" y="210" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
@@ -81,8 +81,8 @@
 <rect class="c" x="210" y="210" width="30" height="30" fill="#6a6c70" shape-rendering="crispEdges" style="--f:var(--c3);--a:var(--c3);--b:var(--c1);--d:150"/>
 <rect class="c" x="240" y="210" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="270" y="210" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="210" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="240" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="210" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="240" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="240" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="240" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="120" y="240" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
@@ -91,8 +91,8 @@
 <rect class="c" x="210" y="240" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="240" y="240" width="30" height="30" fill="#9c9da0" shape-rendering="crispEdges" style="--f:var(--c2);--a:var(--c2);--b:var(--c2);--d:250"/>
 <rect class="c" x="270" y="240" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="240" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="270" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
+<rect x="300" y="240" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="270" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 <rect class="c" x="60" y="270" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="90" y="270" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="120" y="270" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
@@ -101,16 +101,15 @@
 <rect class="c" x="210" y="270" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="240" y="270" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
 <rect class="c" x="270" y="270" width="30" height="30" fill="#cdcecf" shape-rendering="crispEdges" style="--f:var(--c1);--a:var(--c1);--b:var(--c3);--d:350"/>
-<rect class="c" x="300" y="270" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="30" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="60" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="90" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="120" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="150" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="180" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="210" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="240" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="270" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-<rect class="c" x="300" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges" style="--f:var(--c0);--a:var(--c0);--b:var(--c4);--d:450"/>
-</g>
+<rect x="300" y="270" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="30" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="60" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="90" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="120" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="150" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="180" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="210" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="240" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="270" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
+<rect x="300" y="300" width="30" height="30" fill="#ffffff" shape-rendering="crispEdges"/>
 </svg>
