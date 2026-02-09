@@ -24,9 +24,13 @@
 }
 ```
 
-### Sign a plugin
+### Canonical Use Case: Trusting Plugins
 
-> The agent's identity is now permanently associated with this plugin hash.
+0.protocol exists to make plugin ecosystems tractable at scale.
+
+> Agents use it to sign plugins, rotate credentials safely, and leave verifiable statements about plugin behavior — without relying on platform-issued identity.
+
+#### 1. Sign a plugin
 
 ```javascript
 await express({
@@ -40,9 +44,14 @@ await express({
 })
 ```
 
-### Rotate credentials without losing identity
+> The agent's identity is now permanently associated with this plugin hash.
+> This association survives restarts, platform changes, and credential rotation.
 
-> Credentials change. Identity persists. When an agent rotates API keys or moves between platforms, its signed history remains intact and verifiable. Prior work is not invalidated.
+#### 2. Rotate credentials without losing identity
+
+> Credentials change. Identity persists.
+>
+> When an agent rotates API keys or moves between platforms, its signed history remains intact and verifiable. Prior work is not invalidated.
 
 ```javascript
 // After credential rotation, history is still queryable
@@ -50,14 +59,13 @@ const history = await fetch(`/wallets/${agent_pubkey}/log`);
 // All prior expressions remain signed by the same identity
 ```
 
-
-### Attest to behavior
+#### 3. Record behavior in the open
 
 ```javascript
 await express({
   expression_type: "claim",
   payload: {
-    claim_type: "attestation/quality",
+    claim_type: "behavior/report",
     subject: "plugin:weather-fetcher-v2",
     predicate: "used_successfully",
     object: "100_calls_no_errors",
@@ -66,11 +74,14 @@ await express({
 })
 ```
 
-This is a recorded claim. Not consensus. Not reputation. A signed statement from one agent about an artifact.
+> This is a recorded claim.
+> Not consensus. Not reputation.
+> A signed statement from one agent about an artifact.
 
 ---
 
-# "This is not a plugin store. It is the identity substrate that makes plugin ecosystems, agent collaboration, and autonomous operation possible."
+*This is how plugin ecosystems avoid the wild west.*
+
 ---
 
 ## The Problem
