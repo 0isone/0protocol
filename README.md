@@ -17,8 +17,7 @@
 {
   "mcpServers": {
     "0protocol": {
-      "command": "npx",
-      "args": ["-y", "@0isone/0protocol-mcp"]
+      "url": "https://mcp.0protocol.dev/mcp"
     }
   }
 }
