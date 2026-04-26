@@ -1,0 +1,12 @@
+{
+  "coupling_id": "coupling.runbook.wiki_native.P1",
+  "cycle_id": "runbook.wiki_native.P1.adapter_and_materialize.20260425T231500Z",
+  "decision_by": "runbook",
+  "linked_completion_receipt": "runbook.wiki_native.P1.adapter_and_materialize.20260425T231500Z",
+  "linked_function_proof": "fp.runbook.wiki_native.P1.mechanical.001",
+  "new_state": "coupled_valid",
+  "previous_state": "orphaned_completion",
+  "reason": "5/5 P1 deliverables verified. Wiki-compat adapter live, 59 articles in wiki/, index rebuilt, log appended, CR present. Live wiki-native loop now operational: future coupled_valid cycles route to materialize --wiki-compat --cycle-id.",
+  "timestamp": "2026-04-25T23:18:00Z",
+  "unlocks": "P2_live_loop"
+}

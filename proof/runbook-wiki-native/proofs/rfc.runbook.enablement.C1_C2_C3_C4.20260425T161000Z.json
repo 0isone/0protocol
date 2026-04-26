@@ -1,0 +1,74 @@
+{
+  "closed_by": "forge.ext (executing runbook.enablement.C4)",
+  "coupling_refs": [
+    {
+      "id": "runbook.enablement.C1.schema_foundation.20260424T0235Z",
+      "surface": "runbook/raw/cycle-receipts.ndjson"
+    },
+    {
+      "id": "runbook.enablement.C2.repo_substrate.20260424T0240Z",
+      "surface": "runbook/raw/cycle-receipts.ndjson"
+    },
+    {
+      "id": "runbook.enablement.C3.materializer_replay.20260424T0243Z",
+      "surface": "runbook/raw/cycle-receipts.ndjson"
+    }
+  ],
+  "cycle_id": "runbook.enablement.C4.integration.20260424T0246Z",
+  "evidence_refs": [
+    {
+      "surface": "runbook/schemas/event-envelope.schema.json"
+    },
+    {
+      "surface": "runbook/schemas/evidence-span.schema.json"
+    },
+    {
+      "surface": "runbook/schemas/frontmatter.schema.json"
+    },
+    {
+      "surface": "runbook/schemas/field-correspondence-proof.C1.md"
+    },
+    {
+      "surface": "runbook/schemas/index-node.schema.json"
+    },
+    {
+      "surface": "runbook/out/repo-substrate-spec.md"
+    },
+    {
+      "surface": "runbook/out/CODEOWNERS.template"
+    },
+    {
+      "surface": "runbook/out/C2-decision-register.md"
+    },
+    {
+      "surface": "runbook/scripts/materialize.py"
+    },
+    {
+      "surface": "runbook/scripts/replay_check.py"
+    },
+    {
+      "surface": "runbook/out/materialized/cycle_article_M1.base_confirmation.20260421T2100Z.md"
+    },
+    {
+      "surface": "runbook/out/ci-workflows/validate.yml"
+    },
+    {
+      "surface": "runbook/out/ci-workflows/replay.yml"
+    },
+    {
+      "surface": "runbook/out/ci-workflows/materialize.yml"
+    },
+    {
+      "surface": "runbook/out/projection-export-spec.md"
+    },
+    {
+      "surface": "runbook/out/c4-e2e-proof.md"
+    }
+  ],
+  "feature_id": "runbook_objective_led_orchestration_enablement",
+  "proof_refs": [],
+  "receipt_id": "rfc.runbook.enablement.C1_C2_C3_C4.20260425T161000Z",
+  "status": "closed",
+  "summary": "Runbook enablement feature closed across 4 cycles. C1: 3 JSON schemas (event-envelope, evidence-span, frontmatter) + field correspondence proof. C2: repo substrate spec + CODEOWNERS template + decision register (3 decided, 4 deferred). C3: materialize.py + replay_check.py + deterministic proof (sha256:ca4e5c2c...). C4: CI workflows (validate/replay/materialize), index-node schema, projection export spec, e2e pipeline proof. Full chain confirmed: event \u2192 journal \u2192 materializer \u2192 canonical output. Determinism proven.",
+  "timestamp": "2026-04-25T16:10:00Z"
+}
