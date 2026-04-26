@@ -1,0 +1,10 @@
+{
+  "function_target": "P1_wiki_native_materialize",
+  "linked_completion_receipt": "runbook.wiki_native.P1.adapter_and_materialize.20260425T231500Z",
+  "observed_behavior": "5/5 checks pass. (1) materialize.py --wiki-compat flag present in --help. (2) 59 cycle_article_*.md files in runbook/wiki/. (3) Sample frontmatter (C4 article): title, sources, related, tags, created, updated all present \u2014 wiki schema.md compliant. (4) wiki/index.md has 61 cycle_article entries (59 materialized + 2 index refs). (5) wiki/log.md tail: rebuild entry timestamped 2026-04-25T23:15:00Z. CR terminal_outcome=P1_wiki_native_complete confirmed.",
+  "proof_id": "fp.runbook.wiki_native.P1.mechanical.001",
+  "result": "pass",
+  "timestamp": "2026-04-25T23:18:00Z",
+  "witness_actor": "runbook",
+  "witness_class": "mechanical"
+}

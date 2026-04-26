@@ -1,0 +1,12 @@
+{
+  "coupling_id": "coupling.runbook.enablement.C4.integration",
+  "cycle_id": "runbook.enablement.C4.integration.20260424T0246Z",
+  "decision_by": "runbook",
+  "linked_completion_receipt": "runbook.enablement.C4.integration.20260424T0246Z",
+  "linked_function_proof": "fp.runbook.enablement.C4.integration.mechanical.001",
+  "new_state": "coupled_valid",
+  "previous_state": "orphaned_completion",
+  "reason": "6/6 C4 deliverables present and verified. CI workflow specs, index-node schema, projection export spec, e2e pipeline proof, feature-close receipt, CR deposited. Full enablement chain C1-C4 coupled_valid. Feature runbook_objective_led_orchestration_enablement closed.",
+  "timestamp": "2026-04-25T19:55:00Z",
+  "unlocks": "runbook_objective_led_orchestration_enablement feature-close"
+}
