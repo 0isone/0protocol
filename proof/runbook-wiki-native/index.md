@@ -7,16 +7,13 @@
 - [Cycle session4.bookend.end](cycle_session4_bookend_end.md) — cycle_history
 - [Cycle session5.cycle9](cycle_session5_cycle9.md) — cycle_history
 
-## Procedures
-- [P2 Live Loop — Wiki Materialization as Standing Operational Procedure](procedure_p2_live_loop.md) — procedure
-
 ## Proof History
 - [Function Proof refactor.001.cross-witness-divergence.001](proof_refactor_001_cross_witness_divergence_001.md) — proof_history
 
 ## Decision Records
 - [Decision: Followup Tracker — Gap-Capture-at-Moment-of-Discovery (v2)](decision_refactor_001_001_v002_followup_tracker_typology.md) — decision_record
 
-## Cycle Articles (materialized — 61 cycles from runbook/raw/cycle-receipts.ndjson)
+## Cycle Articles (materialized — 59 cycles from runbook/raw/cycle-receipts.ndjson)
 - [1](cycle_article_1.md) — cycle_article
 - [2](cycle_article_2.md) — cycle_article
 - [3](cycle_article_3.md) — cycle_article
@@ -78,5 +75,3 @@
 - [turn.acp.gateway.smoke.2026-04-19T17:25:00Z](cycle_article_turn.acp.gateway.smoke.2026-04-19T17_25_00Z.md) — cycle_article
 - [turn.acp.gateway.smoke.2026-04-19T17:32:00Z](cycle_article_turn.acp.gateway.smoke.2026-04-19T17_32_00Z.md) — cycle_article
 - [turn.request.vulcan_forge_vulcan.20260417T231113Z](cycle_article_turn.request.vulcan_forge_vulcan.20260417T231113Z.md) — cycle_article
-- [wake_router.implementation.20260425](cycle_article_wake_router.implementation.20260425.md) — cycle_article
-- [runbook.wiki_native.productionization.finish.20260426T011228Z](cycle_article_runbook.wiki_native.productionization.finish.20260426T011228Z.md) — cycle_article
